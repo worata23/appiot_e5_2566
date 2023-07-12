@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
   res.send({ ok: 1 })
 })
 app.get('/lists', async (req, res) => {
-  let row = await db('user')
+  let row = await db('user_student')
   res.send({
     datas: row,
     status: 1,
